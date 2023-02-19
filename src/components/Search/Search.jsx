@@ -1,14 +1,10 @@
 import React from "react";
 import styles from "./Search.module.scss";
 
-const Search = ({ setPagenumber, setSearch }) => {
+const Search = () => {
   return (
     <form className="d-flex flex-sm-row flex-column align-items-center justify-content-center gap-4 my-5">
       <input
-        onChange={(e) => {
-          setPagenumber(1);
-          setSearch(e.target.value);
-        }}
         placeholder="Search for characters"
         type="text"
         className={styles.input}
